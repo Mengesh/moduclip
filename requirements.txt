@@ -1,0 +1,5 @@
+trimesh==3.17.1
+shapely==2.0.0
+mapbox-earcut==1.0.1
+scipy==1.9.3
+fastapi[all]==0.88.0
