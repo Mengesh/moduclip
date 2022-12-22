@@ -8,7 +8,8 @@ def clip_polygon_by_plane(polygon: Polygon, plane: Plane, show=False):
 
     :param polygon: polygon to clip
     :param plane: clipping plane
-    :param show: visualize original (blue) and clipped (red) polygon using trimesh. Dev dependencies must be installed.
+    :param show: visualize original (blue) and clipped (red) polygon using trimesh.
+                 Dev dependencies must be installed.
     :returns: clipped polygon
 
     """
