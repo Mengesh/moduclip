@@ -74,7 +74,7 @@ PolyClipper depends on geometry processing libraries:
 
 ModuClip is built with [FastAPI](https://fastapi.tiangolo.com/).
 
-Both PolyClipper and ModuClip depend on polygon and plane classes defined in <models.py>.
+Both PolyClipper and ModuClip depend on polygon and plane classes defined in [models.py](models.py).
 They are designed do be used seamlessly with js 3D libraries such as
 [three](https://threejs.org/) and [babylon](https://www.babylonjs.com/).
 
