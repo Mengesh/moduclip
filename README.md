@@ -66,10 +66,10 @@ Inspect interactive API docs: <http://localhost:8089>
 
 # Dependencies #
 
-PolyClipper depends on geometry processing libraries:
+PolyClipper depends on:
 
-- [trimesh](https://trimsh.org/index.html) (polygon clipping)
-- [shapely](https://shapely.readthedocs.io/en/stable/) (polygon convexity check)
+- [trimesh](https://trimsh.org/index.html) (3D polygon clipping)
+- [shapely](https://shapely.readthedocs.io/en/stable/) (2D polygon convexity check)
 - [pydantic](https://docs.pydantic.dev/) (data validation)
 
 ModuClip is built with [FastAPI](https://fastapi.tiangolo.com/).
