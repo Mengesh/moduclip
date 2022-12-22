@@ -62,6 +62,12 @@ Run container:
 docker run -d --name moduclip -p 8089:80 moduclip
 ```
 
+Or use `docker-compose`:
+
+``` shell
+docker compose up -d
+```
+
 Inspect interactive API docs: <http://localhost:8089>
 
 # Dependencies #
