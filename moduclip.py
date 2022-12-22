@@ -11,7 +11,7 @@ app = FastAPI(
 )
 
 
-@app.post("/polygon-clipper-by-plane")
+@app.post("/polygon-clip-by-plane")
 async def clip_polygon_by_plane(polygon: Polygon, plane: Plane):
     """Returns a polygon clipped by the plane"""
 

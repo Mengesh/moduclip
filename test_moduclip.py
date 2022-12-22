@@ -16,7 +16,7 @@ def test_convex_polygon_clip_by_orthogonal_plane():
             "constant": 1.0,
         },
     }
-    response = client.post("/polygon-clipper-by-plane", json=body)
+    response = client.post("/polygon-clip-by-plane", json=body)
     assert response.status_code == 200
     assert response.json() == {
         "vertices": [1.0, 0.0, 0.0, 2.0, 1.0, 0.0, 1.0, 2.0, 0.0],
@@ -35,7 +35,7 @@ def test_nonconvex_L_polygon_clip():
             "constant": 1.0,
         },
     }
-    response = client.post("/polygon-clipper-by-plane", json=body)
+    response = client.post("/polygon-clip-by-plane", json=body)
     assert response.status_code == 422
     assert response.json() == {"detail": "Polygon must be convex."}
 
@@ -51,6 +51,6 @@ def test_convex_polygon_clip_by_non_orthogonal_plane():
             "constant": 1.0,
         },
     }
-    response = client.post("/polygon-clipper-by-plane", json=body)
+    response = client.post("/polygon-clip-by-plane", json=body)
     assert response.status_code == 422
     assert response.json() == {"detail": "Plane must be orthogonal to the polygon."}
