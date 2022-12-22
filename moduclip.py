@@ -4,7 +4,11 @@ from fastapi import FastAPI, HTTPException
 import polyclipper
 from models import Plane, Polygon
 
-app = FastAPI()
+app = FastAPI(
+    title="ModuClip",
+    description="API for PolyClipper - a polygon clipping module",
+    docs_url="/",
+)
 
 
 @app.post("/polygon-clipper-by-plane")
